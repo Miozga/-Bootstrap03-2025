@@ -28,3 +28,19 @@ NAV {
   font-weight: bold;
   text-transform: none;
 }
+
+.carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-img-one {
+  border-image: url("../img/main-carousel-1.jpg");
+}
+.carousel-img-two {
+  border-image: url("../img/main-carousel-2.jpg");
+}
+.carousel-img-one {
+  border-image: url("../img/main-carousel-3.jpg");
+}
