@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -12,9 +13,19 @@ body {
   font-size: 1.6rem;
 }
 
-/*nawigacja*/
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
 
-NAV {
+/* nawigacja */
+
+nav {
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -29,18 +40,65 @@ NAV {
   text-transform: none;
 }
 
+/* header */
+
+header {
+  font-size: 2rem;
+}
+
 .carousel-item {
   position: relative;
   height: 400px;
   background-position: center;
   background-size: cover;
+  z-index: 0;
 }
+
 .carousel-img-one {
-  border-image: url("../img/main-carousel-1.jpg");
+  background-image: url("../img/main-carousel-1.jpg");
 }
 .carousel-img-two {
-  border-image: url("../img/main-carousel-2.jpg");
+  background-image: url("../img/main-carousel-2.jpg");
 }
-.carousel-img-one {
-  border-image: url("../img/main-carousel-3.jpg");
+.carousel-img-three {
+  background-image: url("../img/main-carousel-3.jpg");
+}
+
+/* home */
+.home-boxes {
+  padding: 5em 0;
+}
+
+.home-box i {
+  font-size: 4rem;
+}
+.home-box h3 {
+  font-size: 2.6rem;
+}
+
+/* ----- */
+
+.home-passion {
+  position: relative;
+  height: 350px;
+  background-image: url("../img/home-passion.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+@media (min-width: 1400px) {
+  .carousel-item {
+    height: 600px;
+  }
+
+  .carousel-img-one {
+    background-image: url("../img/main-carousel-1-hq.jpg");
+  }
+  .carousel-img-two {
+    background-image: url("../img/main-carousel-2-hq.jpg");
+  }
+  .carousel-img-three {
+    background-image: url("../img/main-carousel-3-hq.jpg");
+  }
 }
