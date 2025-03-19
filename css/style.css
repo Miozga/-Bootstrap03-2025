@@ -22,12 +22,14 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
+
 .top-hero {
   position: relative;
   height: 200px;
   background-size: cover;
   z-index: 0;
 }
+
 .top-hero-text {
   display: flex;
   justify-content: center;
@@ -43,9 +45,6 @@ nav {
   text-transform: uppercase;
 }
 
-.footer {
-  font-size: 1.6rem;
-}
 .navbar-toggler {
   font-size: 3rem;
 }
@@ -103,30 +102,83 @@ header {
   z-index: 0;
 }
 
+/* ----- */
+
 .home-brand h3 {
   font-size: 3rem;
   font-weight: bold;
 }
+
+/* footer */
+footer {
+  font-size: 1.6rem;
+}
+
+/* about us */
+
+.aboutus-hero {
+  background-image: url("../img/about/about-hero.jpg");
+  background-position: bottom;
+}
+
+/* ----- */
+
+.aboutus-info {
+  background-color: rgb(248, 248, 248);
+}
+
+.aboutus-info .container {
+  padding: 2em 0.5em;
+}
+
+.aboutus-text {
+  padding: 1.8em;
+}
+
+.aboutus-text h3 {
+  margin-bottom: 0.5em;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline #007bff;
+}
+
+.aboutus-text-right {
+  text-align: right;
+}
+
+.aboutus-img {
+  height: 300px;
+  object-fit: cover;
+}
+
 @media (min-width: 992px) {
   .aboutus-info .container {
     padding: 0;
   }
+
   .aboutus-shadow {
     box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
   }
+
   .aboutus-text {
     padding: 5em 0;
     transform: skew(-15deg);
   }
 
-  .aboutus-text-right {
+  .aboutus-text-left {
     padding-right: 2em;
     text-align: right;
   }
 
-  .aboutus-text-left {
+  .aboutus-text-right {
     padding-left: 2em;
     text-align: left;
+  }
+
+  .aboutus-img {
+    height: auto;
+    transform: skew(-15deg);
   }
 }
 
@@ -144,33 +196,4 @@ header {
   .carousel-img-three {
     background-image: url("../img/main-carousel-3-hq.jpg");
   }
-}
-
-.aboutus-hero {
-  background-image: url("../img/about/highway-2025863_1280.jpg");
-  background-position: bottom;
-}
-
-.aboutus-info {
-  border-color: rgb(248, 248, 248);
-}
-.abouts-info .container {
-  padding: 2em 0.5em;
-}
-.aboutus-text {
-  padding: 1.8rem;
-}
-.aboutus-text h3 {
-  margin-bottom: 0.5rem;
-  font-size: 2.6rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: underline #007bff;
-}
-.aboutus-text-right {
-  text-align: right;
-}
-.aboutus-img {
-  height: 300px;
-  object-fit: cover;
 }
