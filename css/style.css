@@ -197,6 +197,21 @@ footer {
   background-image: url("../img/services/allinone.jpg");
 }
 
+/*Projekty*/
+.project-hero {
+  background-image: url("../img/projects/project-hero.jpg");
+  background-position: center;
+}
+.projects img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.project .btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
 @media (min-width: 992px) {
   .aboutus-info .container {
     padding: 0;
@@ -241,19 +256,4 @@ footer {
   .carousel-img-three {
     background-image: url("../img/main-carousel-3-hq.jpg");
   }
-}
-
-/*Projekty*/
-.project-hero {
-  background-image: url("../img/projects/project-hero.jpg");
-  background-position: center;
-}
-.projects img {
-  height: 240px;
-  object-fit: cover;
-}
-
-.project .btn {
-  font-size: 1.4rem;
-  text-transform: uppercase;
 }
